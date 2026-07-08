@@ -1,12 +1,14 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+﻿import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import CreatePost from './pages/CreatePost'
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<div>Home Page</div>} />
-        <Route path="/about" element={<div>About Page</div>} />
+        <Route path="/" element={<Navigate to="/create-post" replace />} />
+        <Route path="/create-post" element={<CreatePost />} />
+        <Route path="/about" element={<div className="min-h-screen flex items-center justify-center text-white">About Page</div>} />
+        <Route path="*" element={<Navigate to="/create-post" replace />} />
       </Routes>
     </Router>
   )

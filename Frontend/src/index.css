@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Boldonse&family=Climate+Crisis:YEAR@1979&family=Comfortaa:wght@300..700&family=Hurricane&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Oi&family=PT+Mono&family=Pixelify+Sans:wght@400..700&family=Plaster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
+
 *{
   margin:0;
   padding:0;
@@ -9,4 +11,20 @@
 html, body, #root{
   height:100%;
   width:100%
+}
+
+/* @font-face {
+  font-family: 'Yourbold';
+  src: url("/Frontend/public/fonts/Yourbold-Demo.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+
+.climate-crisis {
+  font-family: "Climate Crisis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "YEAR" 1979;
 }
