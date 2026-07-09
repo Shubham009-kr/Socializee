@@ -1,5 +1,6 @@
 ﻿import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import CreatePost from './pages/CreatePost'
+import Feed from './pages/Feed'
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/create-post" replace />} />
         <Route path="/create-post" element={<CreatePost />} />
+        <Route path="/feed" element={<Feed />} />
         <Route path="/about" element={<div className="min-h-screen flex items-center justify-center text-white">About Page</div>} />
         <Route path="*" element={<Navigate to="/create-post" replace />} />
       </Routes>
